@@ -1,6 +1,7 @@
-import * as React from "react"
+import * as React from "react";
 import { Link } from "gatsby";
-import Layout from "../components/core/layout"
+import Layout from "../components/core/layout";
+import { Seo } from "../components/core/seo";
 
 const PostPage = () => {
   return (
@@ -35,4 +36,4 @@ const PostPage = () => {
 
 export default PostPage
 
-export const Head = () => <title>Blog Page</title>
+export const Head = () => <Seo title="Post page" />;

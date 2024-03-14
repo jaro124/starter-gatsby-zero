@@ -3,8 +3,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `starter-gatsby-zero`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Starter Gatsby Zero`,
+    titleTemplate: "%s · Starter bolg",
+    description: `Gatsby and Tailwindcss starter`,
+    keywords: [`gatsby`, `tailwind`, `react`, `tailwindcss`],
+    author: `@doe`,
+    siteUrl: "https://www.doe.com", // No trailing slash allowed!
+    image: "/images/site-image.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@doe",
+    lang: "en",
   },
   plugins: [
     "gatsby-plugin-postcss",
