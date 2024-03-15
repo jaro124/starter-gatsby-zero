@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/core/layout";
 import { Seo } from "../components/core/seo";
+import { StaticImage } from "gatsby-plugin-image";
 
 const PostPage = () => {
   return (
@@ -20,6 +21,14 @@ const PostPage = () => {
             sint similique? Asperiores ratione aperiam tempora, alias corrupti
             deleniti quaerat molestiae.
           </p>
+          <StaticImage
+            alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
+            src="../images/site-image.jpg" 
+            placeholder="blurred"
+            layout="fullWidth"
+            width={500}
+            height={300}
+          />
           <div className="mt-4">
             <button
               aria-label="Back to home page"
@@ -31,9 +40,9 @@ const PostPage = () => {
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default PostPage
+export default PostPage;
 
 export const Head = () => <Seo title="Post page" />;
